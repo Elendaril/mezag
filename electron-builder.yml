@@ -1,0 +1,20 @@
+productName: Mezag
+appId: theia.Mezag
+
+asar: true
+
+win:
+  target:
+    - nsis
+
+extraResources:
+  - from: "./public/extraResources/"
+    to: "extraResources"
+    filter:
+      - "**/*"    
+    
+publish:
+  provider: github
+
+directories:
+  output: "release"
